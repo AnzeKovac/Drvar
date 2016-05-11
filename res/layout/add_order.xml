@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/WhiteSmoke"
+      android:orientation="vertical" >
+
+      <LinearLayout
+          android:id="@+id/Narocnik"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/card"
+          android:layout_margin="5dp"
+          android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/naslednjiNarocnik"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dp"
+              android:text="NAROČNIK"
+              android:fontFamily="sans-serif-condensed"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="@color/Gray" />
+
+          <EditText
+              android:id="@+id/customerText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="15"
+              android:hint="Ime in priimek"
+              android:fontFamily="sans-serif-light"
+              android:inputType="textCapWords|textPersonName" >
+
+              <requestFocus android:layout_width="match_parent" />
+
+          </EditText>
+
+          <AutoCompleteTextView
+              android:id="@+id/adressACText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:ems="15"
+              android:fontFamily="sans-serif-light"
+              android:hint="Naslov" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/Datum"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/card"
+          android:layout_margin="5dp"
+          android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/UserText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="DATUM"
+              android:fontFamily="sans-serif-condensed"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="@color/Gray" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+              <EditText
+                  android:id="@+id/textDate"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:ems="15"
+                  android:fontFamily="sans-serif-light"
+                  android:focusable="false"
+                  android:textSize="20sp" />
+
+              <EditText
+                  android:id="@+id/textTime"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:ems="15"
+                  android:fontFamily="sans-serif-light"
+                  android:focusable="false"
+                  android:textSize="20sp" />
+          </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/Podatki"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:background="@drawable/card"
+          android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-condensed"
+              android:text="PODATKI O NAROČILU"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="@color/Gray" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Tip dostave"
+              android:fontFamily="sans-serif-light"
+			  android:textStyle="bold"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="horizontal" >
+
+              <RadioGroup
+                  android:id="@+id/typeRadio"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:fontFamily="sans-serif-light" >
+
+                  <RadioButton
+                      android:id="@+id/radio0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:checked="true"
+                      android:fontFamily="sans-serif-light"
+                      android:text="Drva" />
+
+                  <RadioButton
+                      android:id="@+id/radio1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-light"
+                      android:text="Paleta" />
+              </RadioGroup>
+          </LinearLayout>
+
+			<TextView
+			    android:id="@+id/textView3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Dolžina"
+			    android:layout_marginTop="5dp"
+			     android:fontFamily="sans-serif-light"
+			    android:textStyle="bold"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			<Spinner
+			    android:id="@+id/spinner1"
+			    android:layout_width="112dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:fontFamily="sans-serif-light"
+			    android:spinnerMode="dialog" />
+
+			<TextView
+			    android:id="@+id/textView3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Količina"
+			    android:layout_marginTop="5dp"
+			    android:fontFamily="sans-serif-light"
+			    android:textStyle="bold"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent" >
+
+              <EditText
+                  android:id="@+id/amountText"
+                  android:layout_width="48dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:ems="10"
+                  android:fontFamily="sans-serif-light"
+                  android:inputType="number" />
+
+              <TextView
+                  android:id="@+id/textView1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:fontFamily="sans-serif-light"
+                  android:text="m"
+                  android:textSize="20dp" />
+          </LinearLayout>
+
+			
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			     android:layout_marginTop="5dp"
+			    android:layout_height="wrap_content" >
+
+				<Switch
+				    android:id="@+id/switch1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textOn="Potrjeno"
+				    android:textOff="Cakanje"
+				    android:fontFamily="sans-serif-light"
+				    android:text="Stanje naročila:"
+				    android:textStyle="bold" />
+
+			</LinearLayout>
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/addButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="7dp"
+          android:background="@drawable/card"
+          android:fontFamily="sans-serif-light"
+          android:text="Dodaj" />
+  </LinearLayout>
+
+</ScrollView>

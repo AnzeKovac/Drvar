@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:background="@color/WhiteSmoke"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/Wrapper"
+        android:layout_width="match_parent"
+        android:background="@drawable/card"
+         android:layout_margin="5dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/ic_action_help" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/datumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Datum"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/SlateGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/narocnikText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.96"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Ime in priimek"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/naslovText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Naslov"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/SlateGray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tipText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Tip"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/SlateGray" />
+
+                <TextView
+                    android:id="@+id/dolzinaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Dolzina"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/SlateGray" />
+
+                <TextView
+                    android:id="@+id/kolicinaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="4 kos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/SlateGray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

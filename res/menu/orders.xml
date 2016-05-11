@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/teden"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="7 dni"/>
+		
+    <item
+    	android:id="@+id/mesec"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="31 dni"/>
+
+</menu> 

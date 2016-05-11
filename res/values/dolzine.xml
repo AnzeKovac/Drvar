@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dolzine">
+        <item>20 cm</item>
+        <item>25 cm</item>
+        <item>30 cm</item>
+        <item>33 cm</item>
+        <item>50 cm</item>
+        <item>100 cm</item>
+    </string-array>
+</resources>
