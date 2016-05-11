@@ -4,7 +4,7 @@ Drvar app is my first ever Android app. Manages "drve" orders. It was ment for s
 #Screens
 Home screen
 ![Home Scren](https://cloud.githubusercontent.com/assets/7703090/15180680/5730e33a-1783-11e6-871d-179eebc84b7b.png)
-Activity for adding orders
+Activity for adding orders  
 ![Adding orders](https://cloud.githubusercontent.com/assets/7703090/15180681/5735ce72-1783-11e6-957a-31ae02707b08.png)
-Activity for listing orders. Click on order opens order for editing.
+Activity for listing orders. Click on order opens order for editing.  
 ![List of orders](https://cloud.githubusercontent.com/assets/7703090/15180682/573a5a3c-1783-11e6-915b-55c821b17c11.png)
